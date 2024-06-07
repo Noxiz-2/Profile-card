@@ -5,6 +5,7 @@ body {
     align-items: center;
     margin: 0;
     height: 100vh;
+
 }
 
 
@@ -17,13 +18,24 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+
 }
 
 
-.numbers {
+.stats {
     display: flex;
-    gap: 60px;
-    margin-top: 60px;
+    margin-top: 20px;
+    width: 100%;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 20px;
+}
+
+.numbers {
+    font-weight: bold;
 }
 
 .mini-container {
@@ -38,12 +50,25 @@ body {
     height: 100px;
     border-radius: 50%;
     margin-top: -50px;
+    z-index: 1;
 }
 
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: cemter;
+    margin-top: 20px;
+}
 
 .header {
-    width: 350px;
+    width: 100%;
     background-color: hsl(227, 10%, 46%);
-    height: 60px;
-    margin-top: -100px;
+    height: 100px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    position: absolute;
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
 }
